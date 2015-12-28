@@ -1,0 +1,5 @@
+
+import requests
+r = requests.get('http://www.aemet.es/xml/municipios/localidad_28013.xml')
+xml = r.text.encode('utf-8')
+print xml
